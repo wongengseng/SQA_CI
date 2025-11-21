@@ -13,7 +13,6 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     if: always()
-    needs: [test]
     steps:
       # TODO: Add Discord notification steps here
       # Hint: Use a Discord webhook action or curl
