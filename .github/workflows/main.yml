@@ -26,28 +26,10 @@ jobs:
       # TODO: Add Discord notification steps here
       # Hint: Use a Discord webhook action or curl
       #steps:
-      # Step 1: Get the code from your repository
-      #- name: Checkout code
-      #  uses: actions/checkout@v4
-      
-      # Step 2: Set up Python
-      #- name: Set up Python
-      #  uses: actions/setup-python@v5
-      #  with:
-      #    python-version: '3.11'
-      
-      # Step 3: Install dependencies
-      #- name: Install dependencies
-      #  run: |
-      #    python -m pip install --upgrade pip
-      #    pip install -r requirements.txt
-      
-      # Step 4: Run the tests
-      #- name: Run pytest
-      #  run: pytest -v
 
       - name: Discord notification
-          uses: cl8dep/action-discord@v0
-          with:
-            webhook: ${{ secrets.DISCORD_WEBHOOK }}
-            message: 'Hello World'
+        uses: actions/checkout@v2
+      - uses: fateyan/action-discord-notifier@v1
+        with:
+          message-title: New Commits Pushed
+          webhook:  https://discord.com/api/webhooks/1441330277279469578/DsysO-Ce_53G5q8Nw8-PBZi9M5P4Hd9SHdcfDa8qEKrGCmqwVZQDPN8j8y8V3WYfaQl0
