@@ -1,0 +1,27 @@
+name: Flask CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # TODO: Add your workflow steps here
+      # Hint: You'll need to:
+      # 1. Checkout code
+      # 2. Setup Python
+      # 3. Install dependencies
+      # 4. Run pytest
+      
+  notify:
+    runs-on: ubuntu-latest
+    if: always()
+    needs: [test]
+    steps:
+      # TODO: Add Discord notification steps here
+      # Hint: Use a Discord webhook action or curl
