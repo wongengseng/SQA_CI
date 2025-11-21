@@ -32,4 +32,4 @@ jobs:
       - uses: fateyan/action-discord-notifier@v1
         with:
           message-title: New Commits Pushed
-          webhook:  https://discord.com/api/webhooks/1441330277279469578/DsysO-Ce_53G5q8Nw8-PBZi9M5P4Hd9SHdcfDa8qEKrGCmqwVZQDPN8j8y8V3WYfaQl0
+          webhook: "https://discord.com/api/webhooks/1441330277279469578/DsysO-Ce_53G5q8Nw8-PBZi9M5P4Hd9SHdcfDa8qEKrGCmqwVZQDPN8j8y8V3WYfaQl0"
