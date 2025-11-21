@@ -8,15 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      # TODO: Add your workflow steps here
-      # Hint: You'll need to:
-      # 1. Checkout code
-      # 2. Setup Python
-      # 3. Install dependencies
-      # 4. Run pytest
+
       
   notify:
     runs-on: ubuntu-latest
